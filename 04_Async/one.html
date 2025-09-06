@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Chai Aur Code</h1>
+    <button id="start" style="background-color:b;">Start!</button>
+    <button id="stop">Stop!</button>
+</body>
+<script>
+    // function sayMyName(){
+    // console.log("H");
+    // console.log("i");
+    // console.log("t");
+    // console.log("e");
+    // console.log("s");
+    // console.log("h");
+    // }   
+    // setTimeout(sayMyName , 5000)
+    // setInterval(sayMyName,2000)
+
+
+    let changename1 = () => document.querySelector('h1').innerHTML = "Best Javascript in World";
+    let changename2 = () => document.querySelector('h1').innerHTML = "Most Loved JS Series";
+
+    let interval1
+    let interval2
+    
+    document.querySelector('#start').addEventListener('click' , 
+        function() {interval1 = setInterval(changename1 , 500),
+                    interval2 = setInterval(changename2 , 1000)
+                } )
+    
+
+    document.querySelector('#stop').addEventListener('click' , 
+        function() {clearInterval(interval1),
+                    clearInterval(interval2),
+                    document.getElementById('head').textContent = "Chai Aur Code"} )
+
+</script>
+</html>
+
+
+
+<!-- 
+setInterval
+setTimeout
+clearTimeout
+clearInterval
+-->
