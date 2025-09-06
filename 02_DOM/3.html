@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Learning with CHAI AND CODE</title>
+</head>
+<body style="background-color: black; color: aquamarine;">
+    <h1>Learning JS with CHAI Aur CODE</h1>
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div)
+    div.className = "main"
+    div.id = "di"
+
+    const para = document.createElement("p")
+    console.log(para)
+    // para.innerHTML = "Hello i am vivek"
+    const addtext = document.createTextNode("Hello i am vivek")
+
+    div.appendChild(addtext)
+    document.body.appendChild(div)
+</script>
+</html>
